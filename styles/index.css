@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+}
+
+#zanto_logo {
+  display: block;
+  width: 15%;
+  margin: 16% auto;
+}
