@@ -8,11 +8,26 @@ body {
   margin: 16% auto;
 }
 
-footer{
+footer {
   text-align: center;
 }
 
-.fecha, .hora{
-  font-family: 'B612 Mono', monospace;
+.fecha,
+.hora {
+  font-family: "B612 Mono", monospace;
   color: goldenrod;
+}
+
+.btn-slide {
+  border: 1px solid rgb(7, 188, 194);
+  border-radius: 25px;
+  padding: 5px 15px;
+  background-color: transparent;
+  color: rgb(7, 188, 194);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-slide:hover {
+  background-color: rgb(7, 188, 194);
+  color: white;
 }
