@@ -34,7 +34,11 @@ function currentTime() {
 dateNow();
 // setInterval(currentTime, 1000);
 
-$(".btn-slide").on("click", function() {
-  $("body").load("./components/slideshow.html");
-  $("#slideshow").css("display", "block");
-});
+$(document).ready(function(){
+  $(".slideshow").load("./components/slideshow.html");
+
+  $(".btn-slide").on("click", function() {
+    $(".slideshow").css("display", "block");
+  });
+})
+  

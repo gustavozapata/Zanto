@@ -31,3 +31,7 @@ footer {
   background-color: rgb(7, 188, 194);
   color: white;
 }
+
+.slideshow {
+  display: none;
+}
