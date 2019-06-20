@@ -7,3 +7,12 @@ body {
   width: 15%;
   margin: 16% auto;
 }
+
+footer{
+  text-align: center;
+}
+
+.fecha, .hora{
+  font-family: 'B612 Mono', monospace;
+  color: goldenrod;
+}
