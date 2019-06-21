@@ -1,42 +1,43 @@
-function dateNow() {
-  const d = new Date();
-  const day = d.getDate();
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-  const month = months[d.getMonth()];
-  const year = d.getFullYear();
-  document.querySelector(".fecha").innerHTML = `${month}-${day}-${year}`;
-}
+$(document).ready(function() {
+  //load component (slideshow)
 
-function currentTime() {
-  //no esta mal el codigo, lo unico es que cada vez que llama
-  //la funcion crea un objeto new Date()
-  //TODO: intenta mejorarlo
-  const h = new Date();
-  const hours = h.getHours();
-  const mins = h.getMinutes();
-  const secs = h.getSeconds();
-  document.querySelector(".hora").innerHTML = `${hours}:${mins}:${secs}`;
-}
+  function dateNow() {
+    const d = new Date();
+    const day = d.getDate();
+    const months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ];
+    const month = months[d.getMonth()];
+    const year = d.getFullYear();
+    document.querySelector(".fecha").innerHTML = `${month}-${day}-${year}`;
+  }
 
-dateNow();
-// setInterval(currentTime, 1000);
+  function currentTime() {
+    //no esta mal el codigo, lo unico es que cada vez que llama
+    //la funcion crea un objeto new Date()
+    //TODO: intenta mejorarlo
+    const h = new Date();
+    const hours = h.getHours();
+    const mins = h.getMinutes();
+    const secs = h.getSeconds();
+    document.querySelector(".hora").innerHTML = `${hours}:${mins}:${secs}`;
+  }
 
-//load component (slideshow)
-$(".slideshow").load("./components/slideshow.html");
+  dateNow();
+  // setInterval(currentTime, 1000);
 
-$(".btn-slide").on("click", function() {
-  $(".slideshow").css("display", "block");
+  $(".btn-slide").on("click", function() {
+    $(".slideshow").css("display", "block");
+  });
 });
