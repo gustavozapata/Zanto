@@ -22,7 +22,7 @@ function dateNow() {
 
 function currentTime() {
   //no esta mal el codigo, lo unico es que cada vez que llama
-  //la function, crea un objeto new Date()
+  //la funcion crea un objeto new Date()
   //TODO: intenta mejorarlo
   const h = new Date();
   const hours = h.getHours();
@@ -34,11 +34,9 @@ function currentTime() {
 dateNow();
 // setInterval(currentTime, 1000);
 
-$(document).ready(function(){
-  $(".slideshow").load("./components/slideshow.html");
+//load component (slideshow)
+$(".slideshow").load("./components/slideshow.html");
 
-  $(".btn-slide").on("click", function() {
-    $(".slideshow").css("display", "block");
-  });
-})
-  
+$(".btn-slide").on("click", function() {
+  $(".slideshow").css("display", "block");
+});

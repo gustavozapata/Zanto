@@ -1,9 +1,9 @@
 var move = 0;
 $(".open-slideshow").on("click", function() {
-  $("#slideshow").css("display", "block");
+  // $("#slideshow").css("display", "block");
 });
 $(".close-slideshow").on("click", function() {
-  $("#slideshow").css("display", "none");
+  $(".slideshow").css("display", "none");
 });
 
 $(".left").on("click", function() {
@@ -25,4 +25,3 @@ function moveSlideshow() {
   }
   $(".container-slideshow ul").css("margin-left", move + "px");
 }
-
