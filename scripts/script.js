@@ -1,3 +1,6 @@
+// LOAD COMPONENTS
+$(".slideshow").load("./components/slideshow.html");
+
 $(document).ready(function() {
   //load component (slideshow)
 
@@ -37,7 +40,17 @@ $(document).ready(function() {
   dateNow();
   // setInterval(currentTime, 1000);
 
-  $(".btn-slide").on("click", function() {
+  // SLIDESHOW 1.0
+  $("#btnslide1").on("click", function() {
     $(".slideshow").css("display", "block");
+  });
+
+  $(".discover-more").on("click", function() {
+    $("html,body").animate(
+      {
+        scrollTop: $(".section1 h2").offset().top - 40
+      },
+      "slow"
+    );
   });
 });
