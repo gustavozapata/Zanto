@@ -1,9 +1,8 @@
 // LOAD COMPONENTS
-$(".slideshow").load("./components/slideshow.html");
+$(".slideshow").load("./components/slideshow/slideshow.html");
+$(".slideshow2").load("./components/slideshow2/slideshow.html");
 
 $(document).ready(function() {
-  //load component (slideshow)
-
   function dateNow() {
     const d = new Date();
     const day = d.getDate();
@@ -44,7 +43,12 @@ $(document).ready(function() {
   $("#btnslide1").on("click", function() {
     $(".slideshow").css("display", "block");
   });
+  //SLIDESHOW 2.0
+  $("#btnslide2").on("click", function() {
+    $(".slideshow2").css("display", "block");
+  });
 
+  //DISCOVER MORE
   $(".discover-more").on("click", function() {
     $("html,body").animate(
       {

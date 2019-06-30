@@ -131,11 +131,6 @@ footer {
 .componentes {
   position: relative;
 }
-.fecha,
-.hora {
-  font-family: "B612 Mono", monospace;
-  color: goldenrod;
-}
 .btn-slide {
   border: 1px solid rgb(7, 188, 194);
   border-radius: 25px;
@@ -149,6 +144,14 @@ footer {
   background-color: rgb(7, 188, 194);
   color: white;
 }
-.slideshow {
+.slideshow,
+.slideshow2 {
   display: none;
+}
+
+/* INITIAL STYLES */
+.fecha,
+.hora {
+  font-family: "B612 Mono", monospace;
+  color: goldenrod;
 }
