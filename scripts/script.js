@@ -22,7 +22,7 @@ $(document).ready(function() {
     ];
     const month = months[d.getMonth()];
     const year = d.getFullYear();
-    document.querySelector(".fecha").innerHTML = `${month}-${day}-${year}`;
+    // document.querySelector(".fecha").innerHTML = `${month}-${day}-${year}`;
   }
 
   function currentTime() {

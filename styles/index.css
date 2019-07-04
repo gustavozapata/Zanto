@@ -52,18 +52,23 @@ nav img {
   text-align: center;
   cursor: pointer;
   text-decoration: underline;
+  transition: all 0.5s;
+}
+.discover-more:hover {
+  color: #0483e3;
 }
 
 /* MAIN */
-.section1 {
+section {
   margin: 100px auto;
   width: 90%;
   /* height: 600px; */
 }
-.section1 h2 {
+section h2 {
   font-size: 1.7em;
   font-weight: 800;
   text-align: center;
+  margin: 80px auto;
 }
 .products {
   margin: 80px auto;
@@ -95,6 +100,65 @@ nav img {
   border: 2px solid var(--bordes-producto);
   border-radius: 15px;
   box-shadow: 3px 3px 8px #bbb;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.product span:hover {
+  /* border-color: #1ab77c; */
+  border-color: #0483e3;
+  box-shadow: 0 0 0 transparent;
+}
+#p01 {
+  background-image: url("../images/products/01.jpg");
+}
+#p02 {
+  background-image: url("../images/products/02.jpg");
+}
+#p03 {
+  background-image: url("../images/products/03.jpg");
+}
+#p04 {
+  background-image: url("../images/products/04.jpg");
+}
+#p05 {
+  background-image: url("../images/products/05.jpg");
+}
+#p06 {
+  background-image: url("../images/products/06.jpg");
+}
+#p07 {
+  background-image: url("../images/products/07.jpg");
+}
+#p08 {
+  background-image: url("../images/products/08.jpg");
+}
+#p09 {
+  background-image: url("../images/products/09.jpg");
+}
+#m01 {
+  background-image: url("../images/promotions/lunes.jpg");
+}
+#m02 {
+  background-image: url("../images/promotions/finde.jpg");
+}
+#m03 {
+  background-image: url("../images/promotions/navidad.jpg");
+}
+.section2 {
+  width: 100%;
+  margin: 100px auto 0 auto;
+  padding: 1px;
+  padding-bottom: 50px;
+  background-color: #f8f8f8;
+}
+.slider {
+  margin: 20px auto;
+  text-align: center;
+}
+.slider .product {
+  margin: 20px 40px;
 }
 
 /* FOOTER */
@@ -116,9 +180,10 @@ footer {
 .contact-footer {
   margin: 40px auto;
   color: white;
+  font-size: 0.9em;
 }
 .contact-footer h3 {
-  font-size: 1.35em;
+  font-size: 1.15em;
 }
 .contact-footer p {
   margin: 12px auto;
