@@ -57,4 +57,41 @@ $(document).ready(function() {
       "slow"
     );
   });
+
+  //HORIZONTAL SLIDER
+  $("#izquierda").on("click", function() {
+    $(".slider").css("margin-left", "0px");
+  });
+  $("#derecha").on("click", function() {
+    $(".slider").css("margin-left", "-943px");
+  });
+
+  //EXPAND PRODUCT IMAGE
+  $(".product span").on("click", function() {
+    $(".bg").css("display", "block");
+    $(this).addClass("product-open");
+  });
+  $(".bg").on("click", function() {
+    $(".bg").css("display", "none");
+    $(".product span").removeClass("product-open");
+  });
+
+  //FILTER PRODUCTS
+  $(".filter p").on("click", function(e) {
+    if (e.target.id == "hombres") {
+      $(".product").css("display", "none");
+      $(".hombres").css("display", "inline-block");
+    } else if (e.target.id == "mujeres") {
+      $(".product").css("display", "none");
+      $(".mujeres").css("display", "inline-block");
+    } else if (e.target.id == "camisetas") {
+      $(".product").css("display", "none");
+      $(".camisetas").css("display", "inline-block");
+    } else if (e.target.id == "polos") {
+      $(".product").css("display", "none");
+      $(".polos").css("display", "inline-block");
+    } else {
+      $(".product").css("display", "inline-block");
+    }
+  });
 });

@@ -69,6 +69,22 @@ section h2 {
   font-weight: 800;
   text-align: center;
   margin: 80px auto;
+  color: #0483e3;
+}
+.filter {
+  /* border: 1px solid red; */
+  margin-bottom: 50px;
+}
+.filter p {
+  font-weight: bold;
+  text-decoration: underline;
+  display: inline;
+  margin: 20px 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.filter p:hover {
+  color: #0483e3;
 }
 .products {
   margin: 80px auto;
@@ -94,6 +110,8 @@ section h2 {
 }
 .product span {
   display: block;
+  /* position: static; */
+  /* position: relative; */
   margin: 5px auto;
   width: 220px;
   height: 220px;
@@ -103,6 +121,28 @@ section h2 {
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  transition: border 0.3s;
+  /* transition: border 0.3s, width 0.5s, height 0.5s; */
+}
+.bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+.product .product-open {
+  width: 520px;
+  height: 520px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -260px;
+  margin-top: -260px;
+  z-index: 1000;
+  box-shadow: 0 0 0 transparent;
   transition: all 0.5s;
 }
 .product span:hover {
@@ -146,6 +186,15 @@ section h2 {
 #m03 {
   background-image: url("../images/promotions/navidad.jpg");
 }
+#m04 {
+  background-image: url("../images/promotions/dorado.jpg");
+}
+#m05 {
+  background-image: url("../images/promotions/vacaciones.jpg");
+}
+#m06 {
+  background-image: url("../images/promotions/lila.jpg");
+}
 .section2 {
   width: 100%;
   margin: 100px auto 0 auto;
@@ -153,9 +202,40 @@ section h2 {
   padding-bottom: 50px;
   background-color: #f8f8f8;
 }
+.botones {
+  width: 90%;
+  max-width: 850px;
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+}
+#izquierda,
+#derecha {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+#derecha {
+  float: right;
+}
+.slider-container {
+  max-width: 945px;
+  margin: 20px auto;
+  /* border: 1px solid blue; */
+  overflow-x: hidden;
+}
 .slider {
   margin: 20px auto;
-  text-align: center;
+  /* text-align: center; */
+  width: 1885px;
+  margin-left: auto;
+  /* border: 1px solid red; */
+  transition: margin 0.5s;
+}
+.slide {
+  display: inline-block;
 }
 .slider .product {
   margin: 20px 40px;
@@ -168,6 +248,8 @@ footer {
   background-color: #1d1d1b;
   /* background-color: black; */
   padding: 1px;
+
+  align-items: center;
 }
 .zantobg {
   width: 100%;
@@ -177,10 +259,23 @@ footer {
   background-image: url("../images/zantologo.png");
   background-size: contain;
 }
+.center-footer {
+  display: flex;
+  align-items: center;
+  height: 450px;
+}
 .contact-footer {
   margin: 40px auto;
   color: white;
   font-size: 0.9em;
+}
+footer #developed {
+  display: absolute;
+  bottom: 0px;
+  color: #0483e3;
+  font-weight: 600;
+  font-size: 0.8em;
+  cursor: default;
 }
 .contact-footer h3 {
   font-size: 1.15em;
