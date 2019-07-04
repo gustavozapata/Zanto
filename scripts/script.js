@@ -93,5 +93,6 @@ $(document).ready(function() {
     } else {
       $(".product").css("display", "inline-block");
     }
+    $(".promotion").css("display", "inline-block");
   });
 });
