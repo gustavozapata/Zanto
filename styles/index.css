@@ -315,3 +315,18 @@ footer #developed {
   font-family: "B612 Mono", monospace;
   color: goldenrod;
 }
+
+@media only screen and (max-width: 927px){
+  .viewport {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .viewport img {
+    width: 200px;
+  }
+  .viewport h2 {
+    font-size: 1.4em;
+    margin-top: 60px;
+  }
+}
